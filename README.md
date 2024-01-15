@@ -17,6 +17,10 @@
 These Dotfiles are for my personal use, and will not work on every machine. They will get better as I get better at linux in general. 
 
 
+
+
+
+
 Some dwm screenshots:
 
 
