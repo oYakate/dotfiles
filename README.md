@@ -3,6 +3,7 @@
 </div>
 <br>
 ![GitHub repo size](https://img.shields.io/github/repo-size/oYakate/dotfiles)
+
 <div align="center">
 Don't worry, these will get better as I get better at linux in general. For now just imagine these are good. 
 
