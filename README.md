@@ -1,7 +1,9 @@
-<img src="banner.gif" width="800">
+<div align="center">
+  <img src="banner.gif" width="500">
+</div>
+<br>
 
-
-My minimal dotfiles
+Don't worry, these will get better as I get better at linux in general. For now just imagine these are good. 
 
 
 Some dwm screenshots:
@@ -13,3 +15,6 @@ Some dwm screenshots:
 
 <img src="dwm2.png" width="1000">
 
+Disable your compositor when using the oldbook colorscheme
+
+No bspwm screenshots cuz flameshot isn't cooperating. You got to check it out yourself.
