@@ -1,4 +1,6 @@
-<img src="banner.gif" width="500">
+<div align="center">
+  <img src="banner.gif" width="500">
+</div>
 
 
 My minimal dotfiles
