@@ -2,7 +2,11 @@
   <img src="banner.gif" width="400">
 </div>
 <br>
+
+
 ![](https://img.shields.io/github/repo-size/oYakate/dotfiles)
+
+
 ![](https://img.shields.io/github/repo-size/seeingangelz/dotfiles?color=CF9FFF&logo=hackthebox&logoColor=D9E0EE&style=for-the-badge&labelColor=191c27)
 
 <div align="center">
