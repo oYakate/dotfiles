@@ -1,5 +1,5 @@
-//#include "themes/onedark.h"
-#include "themes/oldbook.h"
+#include "themes/onedark.h"
+//#include "themes/oldbook.h"
 static const Rule rules[] = {
 	/* xprop(1):
 	 *	WM_CLASS(STRING) = instance, class
