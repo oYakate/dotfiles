@@ -1,4 +1,8 @@
 # dotfiles
 My minimal dotfiles
 Some dwm screenshots:
-<img src="dwm.png" width="300">
+
+
+
+
+<img src="dwm.png" width="1000">
