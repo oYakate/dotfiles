@@ -15,6 +15,12 @@ Some dwm screenshots:
 
 <img src="dwm2.png" width="1000">
 
-Disable your compositor when using the oldbook colorscheme
 
-No bspwm screenshots cuz flameshot isn't cooperating. You got to check it out yourself.
+<img src="dwm3.png" width="1000">
+
+> **Side Note:**
+> 
+> Please disable your compositor when using the oldbook color scheme
+
+
+Bspwm is also using the oldbook colorscheme. Sadly I can't take any screenshots of it because flameshot broke for some reason.
