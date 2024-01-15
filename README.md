@@ -3,7 +3,7 @@
 </div>
 <br>
 
-Don't worry, these will get better as I get better at dwm.
+Don't worry, these will get better as I get better at linux in general. For now just imagine this are good dots. 
 
 
 Some dwm screenshots:
@@ -15,3 +15,4 @@ Some dwm screenshots:
 
 <img src="dwm2.png" width="1000">
 
+No bspwm screenshots cuz flameshot isn't cooperating. You got to check it out yourself.
