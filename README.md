@@ -3,11 +3,10 @@
 </div>
 <br>
 
-
+<div align="center">
 ![](https://img.shields.io/github/repo-size/oYakate/dotfiles)
+</div>
 
-
-![](https://img.shields.io/github/repo-size/seeingangelz/dotfiles?color=CF9FFF&logo=hackthebox&logoColor=D9E0EE&style=for-the-badge&labelColor=191c27)
 
 <div align="center">
 Don't worry, these will get better as I get better at linux in general. For now just imagine these are good. 
