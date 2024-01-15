@@ -14,7 +14,7 @@
 
 
 <div align="center">
-Don't worry, these will get better as I get better at linux in general. For now just imagine these are good. 
+These Dotfiles are for my personal use, and will not work on every machine. They will get better as I get better at linux in general. 
 
 
 Some dwm screenshots:
@@ -37,3 +37,15 @@ Some dwm screenshots:
 
 
 Bspwm is also using the onedark colorscheme. Sadly I can't take any screenshots of it because flameshot is breaking in bspwm for some reason.
+
+## Dependencies:
+on debian and ubuntu based systems:
+```bash
+sudo apt-get install build-essential libx11-dev libxinerama-dev sharutils suckless-tools libxft-dev stterm kitty emacs neovim bspwm polybar
+```
+on arch based systems:
+```bash
+sudo pacman -S base-devel git libx11 libxft xorg-server xorg-xinit
+```
+My build also uses the <a href="https://www.nerdfonts.com">Jet Brains Mono Nerd Font </a>
+
