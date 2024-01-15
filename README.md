@@ -4,7 +4,10 @@
 <br>
 
 <div align="center">
-![](https://img.shields.io/github/repo-size/oYakate/dotfiles)
+
+  
+  ![](https://img.shields.io/github/repo-size/oYakate/dotfiles)
+
 </div>
 
 
