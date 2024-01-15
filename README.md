@@ -3,7 +3,7 @@
 </div>
 <br>
 
-Don't worry, these will get better as I get better at linux in general. For now just imagine this are good dots. 
+Don't worry, these will get better as I get better at linux in general. For now just imagine these are good. 
 
 
 Some dwm screenshots:
