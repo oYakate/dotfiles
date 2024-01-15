@@ -14,12 +14,9 @@
 
 
 <div align="center">
-These Dotfiles are for my personal use, and will not work on every machine. They will get better as I get better at linux in general. 
+These Dotfiles are for my personal use, and will not work on every machine. They will get better as I get better at linux in general.
 
-
-
-<br>
-
+## _________________________________________________________________________________________________________________________________
 
 Some dwm screenshots:
 
