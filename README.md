@@ -1,9 +1,9 @@
 <div align="center">
   <img src="banner.gif" width="500">
 </div>
+<br>
 
-
-My minimal dotfiles
+Don't worry, these will get better as I get better at dwm.
 
 
 Some dwm screenshots:
