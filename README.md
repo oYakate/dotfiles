@@ -7,8 +7,6 @@
 
   
   ![](https://img.shields.io/github/repo-size/oYakate/dotfiles)
-
-
   ![](https://img.shields.io/github/last-commit/oYakate/dotfiles)
 
 
