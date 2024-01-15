@@ -41,11 +41,11 @@ Bspwm is also using the onedark colorscheme. Sadly I can't take any screenshots 
 ## Dependencies:
 on debian and ubuntu based systems:
 ```bash
-sudo apt-get install build-essential libx11-dev libxinerama-dev sharutils suckless-tools libxft-dev stterm kitty emacs neovim bspwm polybar
+sudo apt-get install build-essential libx11-dev libxinerama-dev sharutils suckless-tools libxft-dev stterm kitty emacs neovim bspwm polybar nautilus
 ```
 on arch based systems:
 ```bash
-sudo pacman -S base-devel git libx11 libxft xorg-server xorg-xinit kitty emacs neovim bspwm polybar
+sudo pacman -S base-devel git libx11 libxft xorg-server xorg-xinit kitty emacs neovim bspwm polybar nautilus
 ```
 My build also uses the <a href="https://www.nerdfonts.com">Jet Brains Mono Nerd Font </a>
 
