@@ -22,7 +22,7 @@ Some dwm screenshots:
 > 
 > Please disable your compositor when using the oldbook color scheme
 >
-> also in the first two screenshots I was using linux dabbler's build of slstatus which can be found <a href="https://github.com/linuxdabbler/suckless" target=”blank”>here</a> .
+> also in the first two screenshots I was using linux dabbler's build of slstatus which can be found <a href="https://github.com/linuxdabbler/suckless" target=”_blank”>here</a> .
 
 
 Bspwm is also using the oldbook colorscheme. Sadly I can't take any screenshots of it because flameshot broke for some reason.
