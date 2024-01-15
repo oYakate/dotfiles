@@ -18,7 +18,8 @@ Some dwm screenshots:
 
 <img src="dwm3.png" width="1000">
 
-> **Side Note**
+> **Side Note:**
+> 
 > Please disable your compositor when using the oldbook color scheme
 
 
