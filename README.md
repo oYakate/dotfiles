@@ -15,6 +15,7 @@ Some dwm screenshots:
 
 <img src="dwm2.png" width="1000">
 
-Disable your compositor when using the oldbook colorscheme
+Disable your compositor when using the oldbook colorscheme.
+<img src="dwm3.png" width="1000">
 
 No bspwm screenshots cuz flameshot isn't cooperating. You got to check it out yourself.
