@@ -47,5 +47,7 @@ on arch based systems:
 ```bash
 sudo pacman -S base-devel git libx11 libxft xorg-server xorg-xinit kitty emacs neovim bspwm polybar nautilus
 ```
-My build also uses the <a href="https://www.nerdfonts.com">Jet Brains Mono Nerd Font </a>
+And for all the madman out there using gentoo, follow the <a href"https://wiki.gentoo.org/wiki/Dwm">instructions</a> on the gentoo wiki! Have fun compiling!
+
+My build also uses the <a href="https://www.nerdfonts.com">Jet Brains Mono Nerd Font </a> so please install it for a (much) better experience.
 
