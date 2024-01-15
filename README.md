@@ -23,4 +23,4 @@ Some dwm screenshots:
 > Please disable your compositor when using the oldbook color scheme
 
 
-No bspwm screenshots cuz flameshot isn't cooperating. You got to check it out yourself.
+Bspwm is also using the oldbook colorscheme. Sadly I can't take any screenshots of it because flameshot broke for some reason.
