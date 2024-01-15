@@ -56,7 +56,7 @@ font-3 = "JetBrainsMono Nerd Font:size=10;2"
 
 ;xwindow module for window titles
 
-modules-left = xworkspaces
+modules-left = bspwm
 modules-center =  
 modules-right = filesystem mpd pulseaudio battery date
 
