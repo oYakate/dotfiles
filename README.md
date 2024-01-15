@@ -45,7 +45,7 @@ sudo apt-get install build-essential libx11-dev libxinerama-dev sharutils suckle
 ```
 on arch based systems:
 ```bash
-sudo pacman -S base-devel git libx11 libxft xorg-server xorg-xinit
+sudo pacman -S base-devel git libx11 libxft xorg-server xorg-xinit kitty emacs neovim bspwm polybar
 ```
 My build also uses the <a href="https://www.nerdfonts.com">Jet Brains Mono Nerd Font </a>
 
