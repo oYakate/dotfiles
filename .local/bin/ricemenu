@@ -1,0 +1,35 @@
+#!/bin/bash 
+
+DMENU='dmenu -i -l 20'
+choice=$(printf "normal-mode\nproductive-mode\nlogout\nreboot\nshutdown\nquit" | $DMENU)
+
+case "$choice" in
+	normal-mode)cd ~/.local/src/dots/dwm/
+	rm config.h
+	make
+	kitty -e sudo make clean install
+	cd
+	xwallpaper --zoom blue.jpg
+	xdotool key super+shift+r
+        ;;
+	productive-mode)
+	cd ~/.local/src/dots/dwm-productive/
+        rm config.h
+        make
+        kitty -e sudo make clean install
+        cd
+        xwallpaper --zoom gruv.png
+	xdotool key super+shift+r
+	;;
+	
+	logout)killall dwm slock sbar slstatus startx && clear
+	;;
+	reboot) kitty -e sudo reboot
+	;;
+	shutdown) kitty -e sudo shutdown
+	;;
+	quit) exit 0
+	;;
+
+esac
+
