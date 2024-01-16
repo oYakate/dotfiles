@@ -1,4 +1,7 @@
 #!/bin/bash
+# you will need a ~/wallpaper/ directory with your wallpapers for this script to work
+# you will also need xwallpaper installed
+
 wall=$(find ~/wallpaper/ -type f -name "*.jpg" -o -name "*.png" | shuf -n 1)
 xwallpaper --zoom $wall
 
