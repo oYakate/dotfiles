@@ -50,5 +50,5 @@ sudo pacman -S base-devel git libx11 libxft xorg-server xorg-xinit kitty emacs n
 ```
 And for all the madmen out there using gentoo, follow the <a href="https://wiki.gentoo.org/wiki/Dwm">instructions</a> on the gentoo wiki! Have fun compiling!
 
-My build also uses the <a href="https://www.nerdfonts.com">Jet Brains Mono Nerd Font </a>.
+My build also uses the <a href="https://www.nerdfonts.com/font-downloads">Jet Brains Mono Nerd Font </a>.
 
