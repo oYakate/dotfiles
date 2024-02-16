@@ -1,0 +1,1 @@
+/home/yakate/.config/emacs/elpaca/repos/persp-mode/persp-mode.el

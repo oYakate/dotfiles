@@ -1,0 +1,91 @@
+clear
+clear
+zsh
+clear
+clear
+git add .
+git commit -m"changing some stuff up"
+git pull
+clear
+git add .
+git commit -m"yes"
+pull
+git pull
+figlet nigga
+clear
+exitr
+exit
+./python.org
+chmod +x python.org
+./python.org
+rm -rf python
+sudo apt install python 
+clear
+python python.org
+python3.12 python.org
+s
+touch main.py
+python3.12 main.py
+python3 main.py
+python3 main
+python3 main.py
+python3.10 main.py
+python3 main.py
+python3.12 main.py
+python3 main.py
+rm -rf main.py main.py\~ python.org python.org\~ 
+:q
+mkdir c++
+cd c++/
+touch index.cpp
+l
+ls
+git add .
+git commit -m"added treemacs"
+git pull
+git push
+clear
+fish
+clear
+fish
+clear && clear
+clear 
+eshell
+clear
+vs
+code
+clear
+ls
+ll
+l
+ll
+ls
+la
+ls la
+ls -la
+ls a
+ls -a
+clear
+ls la
+ls -la
+cmatrix
+cava
+cmus
+clear
+ls
+vter
+vterm
+kitty
+emacs -nw
+cd ~/.local/src
+ls
+cd dwm-builds/
+cd dwm-gruv
+git add .
+git commit -m"yes"
+git push -u origin main
+git push 
+eshell
+bash
+g++ index.cpp
+./a.out

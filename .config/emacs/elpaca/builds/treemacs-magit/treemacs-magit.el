@@ -1,0 +1,1 @@
+/home/yakate/.config/emacs/elpaca/repos/treemacs/src/extra/treemacs-magit.el

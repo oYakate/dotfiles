@@ -1,0 +1,1 @@
+("~/.config/emacs/" "~/.local/src/dots/.config/dwm/" "~/programming/oyakate.github.io/")
