@@ -1,5 +1,5 @@
 <div align="center">
-  <img src=".github/banner.gif" width="400">
+  <img src="https://github.com/oYakate/dotfiles/blob/main/.github/assets/banner.gif?raw=true" width="400">
 </div>
 <br>
 <div align="center">
