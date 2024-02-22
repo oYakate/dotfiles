@@ -1,3 +1,6 @@
+## NOT COMPLETED YET! If you come from r/unixporn and want to check out my configs, visit the old branch of this repo.
+
+
 <div align="center">
   <img src="https://github.com/oYakate/dotfiles/blob/main/.github/assets/banner.gif?raw=true" width="400">
 </div>
