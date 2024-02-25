@@ -4,6 +4,7 @@
 
 wall=$(find ~/wallpaper/ -type f -name "*.jpg" -o -name "*.png" | shuf -n 1)
 xwallpaper --zoom $wall
-
+wal -i $wal
+pywalfox update
 
 
