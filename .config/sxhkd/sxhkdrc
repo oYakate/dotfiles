@@ -3,13 +3,12 @@
 #
 
 # terminal emulator
-super + {_,shift + } Return
+super+ {_,shift + } Return
 	kitty
 
 # program launcher
 super + p
-	rofi -show drun
-#	dmenu_run
+	dmenu_run
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -20,7 +19,7 @@ super + Escape
 #
 
 # quit/restart bspwm
-super + alt {q,r}
+super + {_,shift + } {q,r}
 	bspc {quit,wm -r}
 
 # close and kill
@@ -64,8 +63,8 @@ super + {p,b,comma,period}
 	bspc node -f @{parent,brother,first,second}
 
 # focus the next/previous window in the current desktop
-super + {_,shift + }c
-	bspc node -f {next,prev}.local.!hidden.window
+# super + {_,shift + }c
+#	bspc node -f {next,prev}.local.!hidden.window
 
 # focus the next/previous desktop in the current monitor
 super + bracket{left,right}
@@ -120,9 +119,3 @@ super + alt + shift + {h,j,k,l}
 # move a floating window
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
-
-
-
-#nautilus
-super + Return
-	nautilus
