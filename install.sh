@@ -54,33 +54,35 @@ case $answer in
 ;;
 configs
 echo "installing my dotfiles now..."
+mkdir ~/.config/backups
+echo "if you already had configs of your own in the .config directory they will be moved to ~/.config/backups."
 cd .config
 if [ -L $HOME/.config/bspwm ]; then
-  rm -rf $HOME/.config/bspwm
+  mv $HOME/.config/bspwm $HOME/.config/backups
 fi
 if [ -L $HOME/.config/sxhkd ]; then
-  rm -rf $HOME/.config/sxhkd
+  mv $HOME/.config/sxhkd $HOME/.config/backups
 fi
 if [ -L $HOME/.config/suckless ]; then
-  rm -rf $HOME/.config/suckless
+  mv $HOME/.config/suckless $HOME/.config/backups
 fi
 if [ -L $HOME/.config/polybar ]; then
-  rm -rf $HOME/.config/polybar
+  mv $HOME/.config/polybar $HOME/.config/backups
 fi
 if [ -L $HOME/.config/kitty ]; then
-  rm -rf $HOME/.config/kitty
+  mv $HOME/.config/kitty $HOME/.config/backups
 fi
 
 cp * $HOME/.config/
 cd ../
 cd .local/bin
-cp * ~/.local/src
+cp * ~/.local/bin
 echo "export $PATH=$HOME/.local/bin:$HOME/bin:/usr/local/bin:$PATH" >> ~/.zshrc
 #.xinitrc file
 echo "Which wm do you want to use?"
 echo "1) bspwm"
 echo "2) dwm"
-echo "3) I'll do that myself"
+echo "3) I'll figure it out myself"
 echo "eg. 1, 2, 3"
 read answer
 case $answer in
