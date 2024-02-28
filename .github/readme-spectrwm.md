@@ -1,6 +1,6 @@
 ## my spectrwm config
 <div align="left">
-``` bash
+```Go
          spectrwm config
   -------------------------------
   wm           -> spectrwm
