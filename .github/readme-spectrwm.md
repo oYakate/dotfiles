@@ -1,5 +1,6 @@
 ## my spectrwm config
 <div align="left">
+
 ```Go
          spectrwm config
   -------------------------------
@@ -12,53 +13,7 @@
   font         -> Jet Brains Mono NF
   music player -> cmus(no original config tho[yet] )
   
-    ```
-
-
-```Go
-❄️                  Setup / DWM                   ❄️
----------------------------------------------------
-╭─ Distro          -> Arch Linux
-├─ Editor          -> NeoVim / Emacs
-├─ Browser         -> Firefox / qutebrowser
-├─ Shell           -> zsh
-╰─ Process Viewer  -> btop
- 
-╭─ Music Player    -> cmus
-├─ Compositor      -> picom
-├─ Notifications   -> dunst
-├─ Media Player    -> mpv
-╰─ File Manager    -> ranger
- 
-╭─ WM              -> dwm
-├─ Terminal        -> st
-├─ App Laucher     -> dmenu
-├─ Theme           -> pywal
-╰─ Font            -> JetBrainsMono NF
 ```
-```Go
-❄️                  Setup / DWM                   ❄️
----------------------------------------------------
-╭─ Distro          -> Arch Linux
-├─ Editor          -> NeoVim / Emacs
-├─ Browser         -> Firefox / qutebrowser
-├─ Shell           -> zsh
-╰─ Process Viewer  -> btop
- 
-╭─ Music Player    -> cmus
-├─ Compositor      -> picom
-├─ Notifications   -> dunst
-├─ Media Player    -> mpv
-╰─ File Manager    -> ranger
- 
-╭─ WM              -> dwm
-├─ Terminal        -> st
-├─ App Laucher     -> dmenu
-├─ Theme           -> pywal
-╰─ Font            -> JetBrainsMono NF
-```
-
-
 
 
 
