@@ -10,7 +10,8 @@
 
 
 </div>
-<br><br>
+<br><br><br>
+
 These are my new dotfiles since I moved to arch recently. The old dotfiles can be found <a href="https://github.com/oYakate/dotfiles/tree/old">here</a>
 
 
