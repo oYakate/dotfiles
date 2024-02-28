@@ -1,5 +1,5 @@
 <div align="right">
-## My spectrwm config
+
 
 </div>
 <div align="left" size="90px">
