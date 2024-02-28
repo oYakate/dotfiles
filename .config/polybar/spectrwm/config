@@ -1,0 +1,35 @@
+include-file = "~/.config/polybar/spectrwm/modules"
+include-file = "~/.config/polybar/spectrwm/colors"
+[bar/spectrwm]
+width = 100%
+height = 24pt
+radius = 0
+; radius = 6
+; dpi = 96
+background = ${colors.background}
+foreground = ${colors.foreground}
+line-size = 3pt
+border-size = 4pt
+border-color = #00000000
+padding-left = 1
+padding-right = 1
+module-margin = 1
+separator = |
+separator-foreground = ${colors.disabled}
+font-0 = JetBrainsMono Nerd Font;2
+font-1 = monospace;2
+modules-left = menu xworkspaces
+modules-center = xwindow
+modules-right = wall pulseaudio date
+cursor-click = pointer
+cursor-scroll = ns-resize
+enable-ipc = true
+; wm-restack = generic
+; wm-restack = bspwm
+; wm-restack = i3
+; override-redirect = true
+[settings]
+screenchange-reload = true
+pseudo-transparency = true
+
+; vim:ft=dosini

@@ -1,0 +1,16 @@
+[colors]
+;background = #282828
+;background-alt = #3c3836
+;foreground = #ebdbb2
+;primary = #fbf1c7
+;secondary = #665c54
+;alert = #cc241d
+;disabled = #707880
+
+background = ${xrdb: color0}
+foreground = ${xrdb: color7} 
+foreground-alt = ${xrdb: color2}
+alert      = ${xrdb: color9}
+underline  = ${xrdb: color2}
+primary    = ${xrdb: color7}
+

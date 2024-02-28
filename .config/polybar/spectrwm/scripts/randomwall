@@ -1,0 +1,3 @@
+wall=$(find ~/wallpapers/wallpapers/Gruv/ -type f -name "*.jpg" -o -name "*.png" | shuf -n 1)
+xwallpaper --zoom $wall
+wal -i $wall

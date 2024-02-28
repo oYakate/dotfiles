@@ -1,0 +1,8 @@
+[colors]
+background = #000
+background-alt = #222222
+foreground = #fff
+primary = #fff
+secondary = #fff
+alert = #fff
+disabled = #FF0000

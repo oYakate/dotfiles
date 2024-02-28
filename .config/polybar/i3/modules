@@ -1,51 +1,3 @@
-[colors]
-background = #282c34
-background-alt = #282c34
-foreground = #ABB2BF
-primary = #C678DD
-secondary = #8ABEB7
-alert = #A54242
-disabled = #707880
-
-[bar/bar1]
-width = 100%
-height = 16pt
-radius = 0
-
-; dpi = 96
-
-background = ${colors.background}
-foreground = ${colors.foreground}
-
-line-size = 3pt
-
-border-size = 0pt
-border-color = #00000000
-
-padding-left = 0
-padding-right = 1
-
-module-margin = 1
-
-separator = |
-separator-foreground = ${colors.disabled}
-
-font-0 = JetBrainsMono Nerd Font;2
-
-modules-left = xworkspaces 
-modules-right = pulseaudio wlan date
-
-cursor-click = pointer
-cursor-scroll = ns-resize
-
-enable-ipc = true
-
-; wm-restack = generic
- wm-restack = bspwm
-; wm-restack = i3
-
-; override-redirect = true
-
 [module/systray]
 type = internal/tray
 
@@ -71,6 +23,45 @@ label-empty = %name%
 label-empty-foreground = ${colors.disabled}
 label-empty-padding = 1
 
+[module/i3]
+type = internal/i3
+pin-workspaces = true
+show-urgent = true
+strip-wsnumbers = true
+index-sort = true
+enable-click = true
+enable-scroll = true
+wrapping-scroll = false
+reverse-scroll = false
+fuzzy-match = true
+ws-icon-0 = ;
+ws-icon-1 = ;
+ws-icon-2 = ;
+ws-icon-3 = ;
+ws-icon-4 = ;
+ws-icon-default =  
+format = <label-state> <label-mode>
+label-mode = %mode%
+label-mode-padding = 0 
+label-mode-background = #e60053
+label-focused = 󰪥
+label-focused-foreground = color.foreground
+label-focused-background = color.background
+label-focused-underline = color.background
+label-focused-padding = 2 
+label-unfocused = %icon%
+label-unfocused-padding = 2
+label-visible = %index%
+label-visible-underline = #555555
+label-visible-padding = 2
+label-urgent = %index%
+label-urgent-foreground = #000000
+label-urgent-background = #bd2c40
+label-urgent-padding = 2
+; Separator in between workspaces
+label-separator = 
+label-separator-padding = 0
+label-separator-foreground = #ffb52a
 [module/xwindow]
 type = internal/xwindow
 label = %title:0:60:...%
@@ -134,8 +125,7 @@ label-disconnected = %{F#F0C674}%ifname%%{F#707880} disconnected
 [module/wlan]
 inherit = network-base
 interface-type = wireless
-label-connected = %{F#F0C674}%ifname%%{F-} %essid% 
-;%local_ip%
+label-connected = %{F#F0C674}%ifname%%{F-} %essid% %local_ip%
 
 [module/eth]
 inherit = network-base
@@ -151,9 +141,10 @@ date-alt = %Y-%m-%d %H:%M:%S
 
 label = %date%
 label-foreground = ${colors.primary}
-
-[settings]
-screenchange-reload = true
-pseudo-transparency = true
-
-; vim:ft=dosini
+[module/menu]
+    type = custom/script
+    exec = echo " "
+    click-left = "dmenu_run"
+    click-right = "kitty"
+    background = ${colors.background-alt}
+    label-mounted-margin=1
