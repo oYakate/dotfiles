@@ -1,5 +1,5 @@
 ## my spectrwm config
-<div align="left">
+<div align="left" width = "600px">
 
 ```Go
          spectrwm config
