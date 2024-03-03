@@ -11,7 +11,6 @@
   editor       -> neovim/emacs/vscode(rare use cases)
   shell        -> zsh
   font         -> Jet Brains Mono NF
-  music player -> cmus(no original config tho[yet] )
   
 ```
 
