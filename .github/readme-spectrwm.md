@@ -18,5 +18,5 @@
 
      
 <div align="center">
-  <img src="https://github.com/oYakate/dotfiles/blob/main/.github/assets/spectrwm.png?raw=true" width="600px">
+  <img src="https://github.com/oYakate/dotfiles/blob/main/.github/assets/spectrwm.png?raw=true">
 </div>
