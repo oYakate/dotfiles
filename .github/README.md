@@ -22,7 +22,7 @@ These are my new dotfiles since I moved to arch recently. The old dotfiles can b
 <div align="center">
 
 > These Dotfiles are for my personal use, and will probably break your system. If you really want to check them out, do so in a vm. They will get better as I get better at linux in general.
-
+</div>
 ## 
 
 my configs:
