@@ -25,6 +25,11 @@ These are my new dotfiles since I moved to arch recently. The old dotfiles can b
 
 ## 
 
+window managers:
+- <a href="https://github.com/oYakate/dotfiles/blob/main/.github/readme-bspwm.md">bspwm</a>
+- <a href="https://github.com/oYakate/dotfiles/blob/main/.github/readme-hyprland.md">hyprland</a>
+- <a href="https://github.com/oYakate/dotfiles/blob/main/.github/readme-spectrwm.md">spectrwm</a>
+- i3 readme coming soon...
+- dwm readme coming soon...
 
-<p align="center"><i>Readme coming soon...</i></p>
 
