@@ -1,5 +1,3 @@
-## DO NOT USE THE install script it will break your system as it is right now
-
 <div align="center">
   <img src="https://github.com/oYakate/dotfiles/blob/main/.github/assets/banner.gif?raw=true" width="400">
 </div>
