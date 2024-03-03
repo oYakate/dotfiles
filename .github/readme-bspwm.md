@@ -7,7 +7,7 @@
   wm           -> bspwm
   bar          -> polybar
   app launcher -> dmenu
-  terminal     -> st
+  terminal     -> st/kitty
   editor       -> neovim/emacs/vscode(for css)
   shell        -> zsh
   font         -> Jet Brains Mono NF
