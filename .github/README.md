@@ -16,7 +16,7 @@
 
 
 
-These are my new dotfiles since I moved to arch recently. The old dotfiles can be found <a href="https://github.com/oYakate/dotfiles/tree/old">here</a>
+
 
 
 <div align="center">
@@ -36,4 +36,7 @@ my configs:
 - i3 readme coming soon...
 - dwm readme coming soon...
 
+
+
+These are my new dotfiles. The old dotfiles can be found <a href="https://github.com/oYakate/dotfiles/tree/old">here</a>
 
