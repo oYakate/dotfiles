@@ -33,8 +33,9 @@ my configs:
 - <a href="https://github.com/oYakate/dotfiles/blob/main/.github/readme-bspwm.md">bspwm</a>
 - <a href="https://github.com/oYakate/dotfiles/blob/main/.github/readme-hyprland.md">hyprland</a>
 - <a href="https://github.com/oYakate/dotfiles/blob/main/.github/readme-spectrwm.md">spectrwm</a>
+- <a href="https://github.com/oYakate/dotfiles/blob/main/.github/readme-dwm.md">dwm</a>
 - i3 readme coming soon...
-- dwm readme coming soon...
+
 
 
 
