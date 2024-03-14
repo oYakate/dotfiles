@@ -22,10 +22,15 @@
 </div>
 
 
-
-|     dwm patches    |
-| -------- | ------- |
-| <a href="https://dwm.suckless.org/patches/alternativetags/">alternative tags</a>  | $250    |
-| February | $80     |
-| March    | $420    |
-
+dwm patches:
+- <a href="https://dwm.suckless.org/patches/alternativetags/">alternative tags</a>
+- <a href="https://dwm.suckless.org/patches/attachbottom/">attachbottom</a>
+- <a href="https://dwm.suckless.org/patches/bar_height/">bar height</a>
+- <a href="https://dwm.suckless.org/patches/barpadding/">barpadding</a>
+- <a href="https://dwm.suckless.org/patches/preserveonrestart/">preserveonrestart</a>
+- <a href="https://dwm.suckless.org/patches/resizecorners/">resizecorners</a>
+- <a href="https://dwm.suckless.org/patches/restartsig/">restartsig</a>
+- <a href="https://dwm.suckless.org/patches/scratchpads/">scratchpads</a>
+- <a href="https://dwm.suckless.org/patches/underlinetags/">underlinetags</a>
+- <a href="https://dwm.suckless.org/patches/vanitygaps/">vanitygaps</a>
+- <a href=https://dwm.suckless.org/patches/xrdb/>xrdb</a>
