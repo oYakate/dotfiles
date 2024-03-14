@@ -7,6 +7,7 @@
   wm           -> dwm
   bar          -> dwm bar
   app launcher -> dmenu
+  colorscheme  -> pywal
   terminal     -> st
   editor       -> neovim/emacs
   shell        -> zsh
@@ -16,9 +17,10 @@
 
 </div>
 
-     
+
+
 <div align="center">
-  <img src="https://github.com/oYakate/dotfiles/blob/main/.github/assets/bspwm.png?raw=true">
+  <img src="https://github.com/oYakate/dotfiles/blob/main/.github/assets/dwm.png?raw=true">
 </div>
 
 
