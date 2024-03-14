@@ -1,14 +1,14 @@
-## my spectrwm config
+## my bspwm config
 <div align="left" width = "600px">
 
 ```Go
-         spectrwm config
+         bspwm config
   -------------------------------
-  wm           -> spectrwm
+  wm           -> bspwm
   bar          -> polybar
   app launcher -> dmenu
   terminal     -> st/kitty
-  editor       -> neovim/emacs/vscode(rare use cases)
+  editor       -> neovim/emacs/vscode(for css)
   shell        -> zsh
   font         -> Jet Brains Mono NF
   
@@ -18,5 +18,5 @@
 
      
 <div align="center">
-  <img src="https://github.com/oYakate/dotfiles/blob/main/.github/assets/spectrwm.png?raw=true">
+  <img src="https://github.com/oYakate/dotfiles/blob/main/.github/assets/bspwm.png?raw=true">
 </div>
