@@ -18,5 +18,5 @@
 
      
 <div align="center">
-  <img src="https://github.com/oYakate/dotfiles/blob/main/.github/assets/hyprland2.png?raw=true">
+  <img src="https://github.com/oYakate/dotfiles/blob/main/.github/assets/hyprland.png?raw=true">
 </div>
