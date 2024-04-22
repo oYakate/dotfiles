@@ -1,11 +1,10 @@
 * {
-    /* `otf-font-awesome` is required to be installed for icons */
     font-family: JetBrainsMono Nerd Font, FontAwesome, Roboto, Helvetica, Arial, sans-serif;
     font-size: 13px;
 }
 
 window#waybar {
-    background-color: rgb(30, 30, 46);
+    background-color: rgb(25, 23, 36);
     background-color: transparent;
     color: #ffffff;
     transition-property: background-color;
@@ -43,7 +42,7 @@ button {
     /* Avoid rounded borders under each button name */
     border: none;
     border-radius: 0;
-    
+    padding: 5px;
 
 }
 
@@ -51,34 +50,50 @@ button:hover {
     background: inherit;
     /*box-shadow: inset 0 -3px #ffffff;*/
 }
+#workspaces {
+    background: #1f1d2e;
+    margin: 1px 1px 1px 1px;
+    padding: 1px 5px;
+    border-radius: 14px;
+    border: 0px;
+    font-style: normal;
+    color: #15161e;
+}
 
 #workspaces button {
-    padding: 0 5px;
-    background-color: transparent;
-    color: #ffffff;
+    padding: 0px 5px;
+    margin: 4px 3px;
+    border-radius: 15px;
+    border: 0px;
+    color: #A93C43;
+    background-color: #A93C43;
+    opacity: 0.5;
+    transition: all 0.3s ease-in-out;
+}
+
+#workspaces button.active {
+    color: #15161e;
+    background: #83373D;
+    border-radius: 15px;
+    min-width: 40px;
+    transition: all 0.3s ease-in-out;
+    opacity: 1.0;
 }
 
 #workspaces button:hover {
-	color: #f38ba8;
-	
-	/*background: rgba(0, 0, 0, 0.2);*/
+    color: #15161e;
+    background:  #83373D;
+    border-radius: 15px;
+    opacity: 1.0;
 }
 
-#workspaces button.focused {
-    background-color: #64727D;
-    box-shadow: inset 0 -3px #ffffff;
-}
 
-#workspaces button.urgent {
-    background-color: #eb4d4b;
-}
 
 #mode {
     background-color: #64727D;
     border-bottom: 3px solid #ffffff;
 }
 
-#clock,
 #battery,
 #cpu,
 #memory,
@@ -93,26 +108,21 @@ button:hover {
 #mode,
 #idle_inhibitor,
 
-#workspaces { 
+#window {
+    background-color: #1e1e2e;
+    color: #cba6f7;
+    border: none;
+    border-radius: 15px;
+    padding: 0 10;
 
-  padding-left: 10px;
-  padding-right: 10px;
-  border-radius: 8px 8px 8px 8px;
-  background-color: #1e1e2e;
 }
-/* If workspaces is the leftmost module, omit left margin 
-.modules-left > widget:first-child > #workspaces {
-    margin-left: 0;
-}
-*/
-/* If workspaces is the rightmost module, omit right margin
-.modules-right > widget:last-child > #workspaces {
-    margin-right: 0;
-}
-*/
 #clock {
     color: #f9e2af;
     background-color: #1e1e2e;
+    border: none;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #battery {
@@ -123,8 +133,8 @@ button:hover {
 }
 
 #battery.charging, #battery.plugged {
-    color: #f38ba8;
-    background-color: #26A65B;
+    color: #313244;
+    background-color: #a6e3a1;
 }
 
 @keyframes blink {
@@ -295,3 +305,53 @@ label:focus {
 	background-color: transparent;
 }
 
+
+#custom-menu {
+    padding: 0px 20px;	
+    background-color: #1e1e2e;
+    border: none;
+    border-radius: 14px;
+    color: aqua;
+}
+
+#custom-screenshot {
+    padding: 0px 20px;	
+    background-color: #1e1e2e;
+    border: none;
+    border-radius: 14px;
+    color: #fab387;
+}
+
+#custom-theme {
+    padding: 0px 20px;	
+    background-color: #1e1e2e;
+    border: none;
+    border-radius: 14px;
+    color: #fab387;
+}
+ 
+#custom-exit {
+    padding: 0px 20px;	
+    background-color: #1e1e2e;
+    border: none;
+    border-radius: 14px;
+    color: #fab387;
+}
+
+ 
+#custom-nc {
+    padding: 0px 20px;	
+    background-color: #1e1e2e;
+    border: none;
+    border-radius: 14px;
+    color: #fab387;
+} 
+
+
+#custom-conf {
+    padding: 0px 20px;	
+    background-color: #1e1e2e;
+    border: none;
+    border-radius: 14px;
+    color: #fab387;
+}
