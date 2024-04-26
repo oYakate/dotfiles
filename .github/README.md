@@ -11,7 +11,7 @@
 
 </div>
 
-
+note: I did steal some configs from other people(rofi config)
 <br><br>
 
 
