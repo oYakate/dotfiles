@@ -13,7 +13,7 @@ theme1=" Frieren"
 theme2=" Akame"
 theme3=" EsDeath"
 theme4=" Sakura"
-theme5=" Emo Type Shit"
+theme5=" Truck-kun"
 theme6=" Ayanokoji"
 theme7=" main"
 exit_menu="󰌑 exit"
@@ -57,8 +57,7 @@ case $select in
 		change_theme sakura
 	
 		;;
-	$theme5)update_wallpaper $HOME/wallpapers/emo_shi.jpg
-	        change_theme black
+	$theme5)
 		;;
 	$theme6)update_wallpaper $HOME/wallpapers/nord/nord.png
 		change_theme nord

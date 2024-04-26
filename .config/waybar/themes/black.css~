@@ -344,7 +344,7 @@ label:focus {
     background-color: #000;
     border: none;
     border-radius: 14px;
-    color: #fff;
+    color: #000;
 } 
 
 

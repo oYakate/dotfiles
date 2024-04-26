@@ -19,11 +19,11 @@ configuration{
 * {
     bg-col:  #000;
     bg-col-light: #000;
-    border-col: #000;
-    selected-col: #fff;
+    border-col: #1e1e2e;
+    selected-col: #1e1e2e;
     blue: #89b4fa;
-    fg-col: #fff;
-    fg-col2: #fff;
+    fg-col: #cdd6f4;
+    fg-col2: #f38ba8;
     grey: #6c7086;
 
     width: 600;

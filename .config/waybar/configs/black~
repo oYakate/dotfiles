@@ -143,7 +143,7 @@
     "custom/conf": {
 	"tooltip": false,
 	"format": "",
-        "on-click": "kitty -e nvim $HOME/.config/waybar/configs/black"
+        "on-click": "kitty -e nvim $HOME/.config/waybar/configs/rosepine"
     },
 
 
