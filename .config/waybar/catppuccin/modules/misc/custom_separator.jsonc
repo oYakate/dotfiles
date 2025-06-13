@@ -1,0 +1,9 @@
+{
+  "custom/separator": {
+    "format": ""
+  },
+  "custom/arrow-separator": {
+    "format": "  ",
+    "tooltip": false
+  }
+}

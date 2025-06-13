@@ -1,0 +1,123 @@
+@import url("../themes/catpuccin/colors-waybar.css");
+
+*{
+  border: none;
+  border-radius: 5px;
+  font-family: JetBrainsMono Nerd Font;
+  font-size: 14px;
+} 
+
+window#waybar {
+  background: @background;
+  color: @foreground;
+}
+
+#workspaces {
+  border-radius: 9px;
+  background: @background1;
+  padding: 0 10px;
+  margin: 5 10px;
+/*  font-weight: bold;*/
+  font-weight: 800;
+}
+
+#workspaces button {
+  color: @foreground;
+}
+
+#workspaces button.active {
+  color: @color1;
+}
+
+#tray {
+  margin-left: 5px;
+  margin-right: 5px;
+  background: @background2;
+}
+
+#clock {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#battery {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+#custom-launcher {
+  color: @color3;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#pulseaudio {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+/*waybar styling doesn't make sense lol, why aren't groups separate, when custom modules are?*/
+#right {
+  border-radius: 9px;
+  background: @background1;
+  padding: 0 10px;
+  margin: 5 10px;
+}
+
+#custom-separator {
+  margin-left: 5px;
+  margin-right: 5px;
+  color: @color4;
+}
+
+#window {
+  border-radius: 9px;
+  background: @color8;
+  padding: 0 10px;
+  margin: 5 10px;
+}
+
+
+#window-title-wrapper {
+  font-weight: 900;
+  border-radius: 9px;
+  background: @background1;
+  padding: 0 5px;
+  margin: 5 10px 
+}
+
+#custom-window-icon {
+  color: @color3;
+  
+
+  font-size: 18px;
+  color: alpha(@color3,0.75);
+  background-color: alpha(@background2, 0.55);
+  border-radius: 6px;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+#custom-arrow-separator {
+  font-size: 11px;
+  color: @color3;
+}
+
+#system {
+  border-radius: 9px;
+  background: @background1;
+  padding: 0 10px;
+  margin: 5 5px
+}
+
+#custom-pacman-icon {
+  font-size: 18px;
+  color: @color1;
+  margin-right: 5px;
+} 
+
+#custom-pacman-updt {
+    font-weight: 800;
+    margin-left: 3px;
+    margin-right: 3px;
+}

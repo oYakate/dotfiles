@@ -1,0 +1,28 @@
+{
+  "group/window-title-wrapper": {
+    "orientation": "horizontal",
+    "max-length": 20,
+    "modules" : [
+        "custom/window-icon",
+        "custom/window-title"
+    ]
+  },
+
+  "custom/window-icon": {
+    "format": "{}",
+    "exec": "~/.config/waybar/pywal/scripts/custom-window-icon.sh",
+    "interval": 0.5,
+    //"on-event": true,
+    "return-type": "json",
+    "markup": "pango"
+  },
+
+  "custom/window-title": {
+    "format": "{}",
+    "exec": "~/.config/waybar/pywal/scripts/custom-window-title.sh",
+    "interval": 0.5,
+    "on-event": true,
+    "return-type": "json",
+    "markup": "pango"
+  }
+}

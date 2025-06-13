@@ -1,0 +1,22 @@
+configuration {
+  modes: [ combi ];
+  combi-modes: [ window, drun, run ];
+  font: "JetBrainsMono NF 15";
+  transparency: 0.85; /* Set transparency level */
+  background: rgba(0, 0, 0, 0.75);
+}
+
+@theme "../../.cache/wal/colors-rofi-dark.rasi"
+
+entry {
+    placeholder: "Find your app <3";
+}
+element {
+  orientation: horizontal;
+  children: [ element-icon, element-text ];
+  spacing: 5px;
+}
+
+entry, element-text {
+  text-color: @foreground;
+}

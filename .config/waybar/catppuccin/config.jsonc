@@ -1,0 +1,19 @@
+{
+  "include": [
+    "/home/yakate/.config/waybar/catppuccin/modules/default/*.jsonc",
+    "/home/yakate/.config/waybar/catppuccin/modules/misc/*.jsonc",
+    "/home/yakate/.config/waybar/catppuccin/modules/custom/*.jsonc"
+  ],
+
+  "modules-right": ["group/system", "group/right"],
+  "modules-center": [""],
+  "modules-left": [ "hyprland/workspaces", "custom/arrow-separator","group/window-title-wrapper"],
+  
+  //"width": 1280,
+  "layer": "top",
+  "position": "top",
+  "height": 30,
+  "margin-top": 5,
+  "margin-left": 10,
+  "margin-right": 10,
+}

@@ -1,0 +1,28 @@
+* {
+  background: transparent;
+}
+configuration {
+ font: "JetBrainsMono NF 12";
+ lines: 1;
+ columns: 0;
+ grid: true;
+}
+
+
+@theme "../../../.cache/wal/colors-rofi-dark.rasi"
+
+element {
+  orientation: horizontal;
+  children: [element-icon];
+  spacing: 5px;
+}
+
+element-icon { 
+  size: 30ch; 
+} 
+window {
+  fullscreen: true;
+}
+
+
+

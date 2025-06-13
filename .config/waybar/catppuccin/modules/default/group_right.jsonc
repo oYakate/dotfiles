@@ -1,0 +1,14 @@
+{
+  "group/right": {
+    "orientation": "horizontal",
+    "modules": [
+      "pulseaudio",
+      "custom/separator",
+      "battery",
+      "custom/separator",
+      "clock",
+      "custom/separator",
+      "tray"
+    ]
+  }
+}

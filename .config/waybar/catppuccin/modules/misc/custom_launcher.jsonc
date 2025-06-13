@@ -1,0 +1,6 @@
+{
+  "custom/launcher": {
+    "format": " ",
+    "on-click": "pgrep rofi >/dev/null 2>&1 && killall rofi || rofi -show drun -location 2 -theme-str 'window { margin: 5px 0px 0px 0px; }'"
+  }
+}

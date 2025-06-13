@@ -1,0 +1,21 @@
+{
+    "group/system": {
+        "orientation": "horizontal",
+        "modules": [
+            "custom/pacman-icon",
+            "custom/pacman-updt"
+        ]
+    },
+
+    "custom/pacman-icon": {
+        "format": "<b> 󰆧 </b>",
+        "tooltip": false
+    },
+
+    "custom/pacman-updt": {
+        "format": "<b>{}</b>",
+        "interval": 60,
+        "exec": "~/.config/waybar/catppuccin/scripts/pacman.sh",
+        "tooltip": false
+    }
+}

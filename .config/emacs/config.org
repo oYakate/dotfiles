@@ -1,0 +1,397 @@
+#+TITLE: Emacs config
+#+AUTHOR: yakate
+#+OPTIONS: toc:2
+
+This is my emacs config, using org, cuz it's cool :p
+
+disable errors. only because of evil-collection
+#+begin_src emacs-lisp
+(setq warning-minimum-level :emergency)
+#+end_src
+
+* Settings
+** scrollbar
+#+begin_src emacs-lisp
+  (scroll-bar-mode -1)
+#+end_src
+** toolbar
+#+begin_src emacs-lisp
+  (tool-bar-mode -1)
+#+end_src
+** menu bar
+
+#+begin_src emacs-lisp
+  (menu-bar-mode -1)
+#+end_src
+** backups
+Both variables are set to nil, because they really make a mess in my filesystem.
+#+begin_src emacs-lisp
+  (setq make-backup-files nil)
+  (setq auto-save-default nil)
+  (setq create-lockfiles nil)
+#+end_src
+** shorten stuff
+#+begin_src emacs-lisp
+  (defalias 'yes-or-no-p 'y-or-n-p)
+#+end_src
+** line numbers
+#+begin_src emacs-lisp
+(global-display-line-numbers-mode 1)
+(global-visual-line-mode t)
+(setq display-line-numbers-type 'relative )
+#+end_src
+** scrolling
+getting rid of the annoying page jumps
+#+begin_src emacs-lisp
+  (setq scroll-conservatively 101)
+#+end_src
+* Fonts
+#+begin_src emacs-lisp
+(add-to-list 'default-frame-alist
+             '(font . "JetBrainsMono Nerd Font-12"))
+#+end_src
+* Functions
+Some useful functions I've stolen from people.
+
+** dt's emacs reload function:
+#+begin_src emacs-lisp
+  (defun reload-init-file ()
+  (interactive)
+  (load-file user-init-file)
+  (load-file user-init-file))
+
+#+end_src
+* Package Manager
+
+- melpa and use-package
+#+begin_src emacs-lisp
+  (require 'package)
+  (setq package-enable-at-startup nil)
+
+  (add-to-list 'package-archives
+               '("melpa" . "https://melpa.org/packages/"))
+  (package-initialize)
+
+  (unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+  (package-install 'use-package)
+  (setq use-package-always-ensure t))
+#+end_src
+* Themes
+Doom emacs default themes:
+#+begin_src emacs-lisp
+    (use-package doom-themes
+    :ensure t
+    :config
+    (setq doom-themes-enable-bold t    ; if nil, bold is universally disabled
+          doom-themes-enable-italic t) ; if nil, italics is universally disabled
+    (doom-themes-neotree-config)
+    (doom-themes-org-config))
+#+end_src
+
+ef themes:
+#+begin_src emacs-lisp
+(use-package ef-themes :ensure t)
+#+end_src
+
+loading the theme:
+#+begin_src emacs-lisp
+  (load-theme 'doom-one t)
+  ;(load-theme 'ef-winter t)
+#+end_src
+* Keybindings
+Yes, this is technicaly a package, but I've separated it just because it's important
+#+begin_src emacs-lisp
+  (use-package general
+    :ensure t
+    :config
+    (general-evil-setup)
+
+    (general-create-definer leader
+      :states '(normal insert visual emacs)
+      :keymaps 'override
+      :prefix "SPC" 
+      :global-prefix "M-SPC") 
+
+    (leader
+      ;;better M-x
+      "SPC" '(counsel-M-x :wk "counsel M-x")
+      ;;coding related keybindings
+      "TAB TAB" '(comment-line :wk "comment a line")
+      ;;config related keybindings
+      "c" '(:ignore t :wk "config")
+      "cc" '((lambda () (interactive) (find-file "~/.emacs.d/config.org")) :wk "edit emacs conf")
+      "cr" '(reload-init-file :wk "Reload conf")
+      "ct" '(load-theme :wk "load a theme")
+
+      ;;buffer related keybindings
+      "b" '(:ignore t :wk "buffer")
+      "bb" '(switch-to-buffer :wk "Switch buffer")
+      "bk" '(kill-this-buffer :wk "Kill this buffer")
+      "bn" '(next-buffer :wk "Next buffer")
+      "bp" '(previous-buffer :wk "Previous buffer")
+      "br" '(revert-buffer :wk "Reload buffer")
+
+      ;;file related keybindings
+      "f" '(:ignore t :wk "file")
+      "ff" '(counsel-find-file :wk "Find a file")
+      "fe" '(dired :wk "emacs file explorer (dired)")
+
+      ;; terminal related keybindings
+      "t" '(:ignore t :wk "terminals")
+      "tt" '(vterm-toggle :wk "toggle vterm")
+      "te" '(eshell :wk "eshell")
+
+      ;;dashboard
+      "h" '(:ignore t :wk "dashboard")
+      "hh" '(dashboard-open :wk "open dashboard")
+
+      ;;toggling stuff
+      "p" '(:ignore t :wk "toggle")
+      "pl" '(display-line-numbers-mode :wk "toggle line numbers")
+      "pt" '(centaur-tabs-mode :wk "toggle centaur tabs")
+      "pf" '(global-flycheck-mode :wk "toggle flycheck")
+      "pn" '(neotree-toggle :wk "toggle neotree")
+
+      "v" '(:ignore t :wk "code")
+      "vc" '(comment-line :wk "comment current line"))
+  )
+
+#+end_src
+* Packages
+** evil
+#+begin_src emacs-lisp
+  (use-package evil 
+             :demand t
+             :init
+             (evil-mode))
+(use-package evil-collection
+  :after (evil)
+  :init
+  (setq evil-collection-key-blacklist '("SPC")) ;;blacklisting space key, because of general
+  :config
+  (evil-collection-init))
+#+end_src
+** ivy and counsel
+
+Install ivy, counsel and related utilities
+#+begin_src emacs-lisp
+
+  (use-package counsel
+    :config (counsel-mode))
+
+  (use-package ivy
+    :bind
+    ;; ivy-resume resumes the last Ivy-based completion.
+    (("C-c C-r" . ivy-resume)
+     ("C-x B" . ivy-switch-buffer-other-window))
+    :custom
+    (setq ivy-use-virtual-buffers t)
+    (setq ivy-count-format "(%d/%d) ")
+    (setq enable-recursive-minibuffers t)
+    :config
+    (ivy-mode))
+
+  (use-package all-the-icons-ivy-rich :ensure t
+    :init (all-the-icons-ivy-rich-mode 1))
+
+  (use-package ivy-rich
+    :after ivy
+    :init (ivy-rich-mode 1) ;; this gets us descriptions in M-x.
+    :custom
+    (ivy-virtual-abbreviate 'full
+     ivy-rich-switch-buffer-align-virtual-buffer t
+     ivy-rich-path-style 'abbrev)
+    :config
+    (ivy-set-display-transformer 'ivy-switch-buffer
+                                 'ivy-rich-switch-buffer-transformer))
+
+  (use-package ivy-posframe
+    :config
+    (setq ivy-posframe-display-functions-alist '((t . ivy-posframe-display)))
+    (setq ivy-posframe-display-functions-alist '((t . ivy-posframe-display-at-frame-top-center)))
+    (ivy-posframe-mode 1))
+
+#+end_src
+** which-key
+(my beloved)
+#+begin_src emacs-lisp
+  (use-package which-key
+    :config
+    (setq which-key-side-window-location 'bottom
+          which-key-separator "   "
+          which-key-add-column-padding 1
+          which-key-max-display-columns nil
+          which-key-min-display-lines 5
+          which-key-side-window-slot 10
+          which-key-idle-delay 0.2
+          which-key-allow-imprecise-window-fit nil)
+  
+    (which-key-mode 1))
+
+#+end_src
+** company
+Emacs code completion framework
+#+begin_src emacs-lisp
+   ;   (use-package company
+   ;   :defer t
+   ;   :config
+   ;   (add-hook 'after-init-hook 'global-company-mode)
+   ;   :init
+   ;   (global-company-mode 1))
+#+end_src
+** auto-complete
+#+begin_src emacs-lisp 
+
+(use-package auto-complete
+  :ensure t
+  :config
+  (ac-config-default))
+  #+end_src
+** dashboard
+#+begin_src emacs-lisp
+  (use-package dashboard
+    :diminish
+    :init
+    (setq dashboard-center-content t) 
+    (setq dashboard-startup-banner 'logo)
+    (setq dashboard-banner-logo-title "Emacs > vim")
+    (dashboard-open)
+    :config
+    (dashboard-setup-startup-hook))
+#+end_src
+** modeline
+default doom emacs modeline
+#+begin_src emacs-lisp
+  (use-package doom-modeline
+    :init (doom-modeline-mode 1)
+    :config
+    (setq doom-modeline-height 30
+          doom-modeline-bar-width 5
+          doom-modeline-presp-name t
+          doom-modeline-presp-icon t))
+
+#+end_src
+** ido
+#+begin_src emacs-lisp
+  (use-package ido-vertical-mode
+  :config
+  (setq ido-enable-flex-matching t)
+  (setq ido-everywhere t)
+  (setq ido-vertical-define-keys 'C-n-and-C-p-only)      
+  :init
+  (ido-mode 1)
+  (ido-vertical-mode 1))
+#+end_src
+** eye candy
+These are some of the less 'necessary' packages, that just look good.
+#+begin_src emacs-lisp
+
+    (use-package all-the-icons)
+    (use-package page-break-lines)
+    (use-package rainbow-mode
+        :hook org-mode prog-mode)
+#+end_src
+** projectile
+#+begin_src emacs-lisp
+  (use-package projectile
+     :config
+     (projectile-mode 1))
+#+end_src
+** shells and terminals
+Should be shell and term, really. :p
+#+begin_src emacs-lisp
+  ;; vterm
+  (use-package vterm
+    :config
+    (setq shell-file-name "/bin/zsh"
+        vterm-max-scrollback 5000))
+
+
+  ;; vterm-toggle
+  (use-package vterm-toggle
+    :after vterm
+    :config
+    (setq vterm-toggle-fullscreen-p nil)
+    (setq vterm-toggle-scope 'project)
+    (add-to-list 'display-buffer-alist
+                 '((lambda (buffer-or-name _)
+                       (let ((buffer (get-buffer buffer-or-name)))
+                         (with-current-buffer buffer
+                           (or (equal major-mode 'vterm-mode)
+                               (string-prefix-p vterm-buffer-name (buffer-name buffer))))))
+                    (display-buffer-reuse-window display-buffer-at-bottom)
+                    (reusable-frames . visible)
+                    (window-height . 0.3))))
+
+  ;;eshell syntax
+  (use-package eshell-syntax-highlighting
+    :after esh-mode
+    :config
+    (eshell-syntax-highlighting-global-mode 1))
+
+
+#+end_src
+** flycheck
+#+begin_src emacs-lisp
+  (use-package flycheck
+    :defer t
+    :init (global-flycheck-mode))
+#+end_src
+** org stuff
+everything related to org, not really much to say here. It's all just the more useless eye candy :p.
+#+begin_src emacs-lisp
+  ;;org-bullets
+  (add-hook 'org-mode-hook 'org-indent-mode)
+  (use-package org-bullets)
+  (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
+  ;; org-tempo
+  (require 'org-tempo)
+  ;; toc-org
+  (use-package toc-org
+      :commands toc-org-enable
+      :init (add-hook 'org-mode-hook 'toc-org-enable))
+#+end_src
+** beacon
+
+#+begin_src emacs-lisp
+  (use-package beacon
+  :config
+     (beacon-mode 1))
+  (global-hl-line-mode t)
+#+end_src
+** centaur tabs
+#+begin_src emacs-lisp
+(use-package centaur-tabs
+  :config
+  (setq centaur-tabs-style "bar")
+  (setq centaur-tabs-height 32)
+  (setq centaur-tabs-set-icons t)
+  (setq centaur-tabs-gray-out-icons 'buffer)
+  (setq centaur-tabs-set-bar 'under)
+  (setq x-underline-at-descent-line t)
+  ;;enabling tabs on startup doesn't really make sense, so I'm only gonna toggle them via the keybindings
+  (centaur-tabs-mode -1))
+
+#+end_src
+** language support
+
+#+begin_src emacs-lisp
+(use-package lua-mode)
+(use-package haskell-mode)
+(use-package rust-mode)
+#+end_src
+** neotree
+#+begin_src emacs-lisp
+(use-package neotree :ensure t
+  :config
+  (setq neo-theme (if (display-graphic-p) 'icons 'arrow)))
+#+end_src
+** dired icons
+#+begin_src emacs-lisp
+  (use-package all-the-icons-dired)
+#+end_src
+** magit
+#+begin_src emacs-lisp
+  (use-package magit :ensure t)
+#+end_src
