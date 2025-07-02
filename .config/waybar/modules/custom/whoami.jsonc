@@ -1,0 +1,7 @@
+{
+  "custom/whoami": {
+    "format": " {}",
+    "exec": "echo $(whoami)",
+    "tooltip": false
+  }
+}

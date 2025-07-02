@@ -1,0 +1,12 @@
+{
+  "group/left": {
+    "orientation": "horizontal",
+    "modules": [
+      "custom/launcher",
+      "custom/separator",
+      "custom/whoami",
+      "custom/separator",
+      "group/window-title-wrapper"
+   ]
+  }
+}

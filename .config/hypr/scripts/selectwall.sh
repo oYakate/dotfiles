@@ -1,7 +1,6 @@
 #!/bin/bash
 
-# Directory where your images are located
-DIR="$HOME/Pictures/wallpapers"  # Modify as needed
+DIR="$HOME/Pictures/wallpapers"  
 
 PROMPT="Select your wallpaper <3"
 THEME="/home/yakate/.config/rofi/themes/select-img.rasi"
@@ -11,3 +10,6 @@ IMG=$(for a in $DIR/*.{jpg,jpeg,png,gif,bmp}; do echo -en "$a\0icon\x1f$a\n" ; d
 
 swaybg --image $IMG &
 wal -i $IMG &
+killall waybar
+sleep 0.4
+waybar

@@ -2,6 +2,8 @@
   "group/right": {
     "orientation": "horizontal",
     "modules": [
+      "backlight",
+      "custom/separator",
       "pulseaudio",
       "custom/separator",
       "battery",

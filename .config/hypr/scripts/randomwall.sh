@@ -6,5 +6,6 @@ wal -i $wall &
 
 swaybg -i $wall &
 killall waybar
-waybar
+sleep 0.4
+waybar 
 kill -USR1 kitty

@@ -1,22 +1,22 @@
-@import url("../themes/catpuccin/colors-waybar.css");
-
+@import url("./../../../.cache/wal/colors-waybar.css");
 *{
   border: none;
-  border-radius: 5px;
-  font-family: JetBrainsMono NF;
-  font-size: 13px;
+  font-family: JetBrainsMono Nerd Font;
+  font-size: 14px;
 } 
 
 window#waybar {
-  background: @background;
+  background: @transparent;
   color: @foreground;
 }
 
 #workspaces {
   border-radius: 9px;
-  background: @background1;
+  background: @background;
   padding: 0 10px;
-  margin: 5 10px;
+  margin: 10 10px;
+/*  font-weight: bold;*/
+  font-weight: 800;
 }
 
 #workspaces button {
@@ -42,10 +42,13 @@ window#waybar {
   margin-left: 5px;
   margin-right: 5px;
 }
+
 #custom-launcher {
-  color: @color3;
+  color: @color1;
   margin-left: 5px;
   margin-right: 5px;
+  
+  padding: 0 10px;
 }
 
 #pulseaudio {
@@ -55,11 +58,17 @@ window#waybar {
 /*waybar styling doesn't make sense lol, why aren't groups separate, when custom modules are?*/
 #right {
   border-radius: 9px;
-  background: @background1;
+  background: @background;
   padding: 0 10px;
-  margin: 5 10px;
+  margin: 10 10px;
 }
 
+#left {
+  border-radius: 9px;
+  background: @background;
+  padding: 0 10px;
+  margin: 10 10px;
+}
 #custom-separator {
   margin-left: 5px;
   margin-right: 5px;
@@ -70,26 +79,55 @@ window#waybar {
   border-radius: 9px;
   background: @color8;
   padding: 0 10px;
-  margin: 5 10px;
+  margin: 10 10px;
 }
 
 
 #window-title-wrapper {
+  font-weight: 900;
   border-radius: 9px;
-  background: @background1;
+  background: @background;
   padding: 0 5px;
-  margin: 5 10px 
 }
 
 #custom-window-icon {
-  font-size: 13px;
   color: @color3;
   
-  background: @background2; 
 
+  font-size: 18px;
+  color: alpha(@color3,0.75);
+  background-color: alpha(@background2, 0.55);
   border-radius: 6px;
   padding-left: 7px;
   padding-right: 7px;
   padding-top: 2px;
   padding-bottom: 2px;
+}
+
+#custom-arrow-separator {
+  font-size: 11px;
+  color: @color8;
+}
+
+#system {
+  border-radius: 9px;
+  background: @background;
+  padding: 0 10px;
+  margin: 10 10px
+}
+
+#custom-pacman-icon {
+  font-size: 18px;
+  color: @color1;
+} 
+
+#custom-pacman-updt {
+    font-weight: 800;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+#custom-whoami {
+  color: @color12;
+  padding: 0 10px;
+
 }

@@ -1,0 +1,20 @@
+{
+  "include": [
+    "/home/yakate/.config/waybar/modules/default/*.jsonc",
+    "/home/yakate/.config/waybar/modules/misc/*.jsonc",
+    "/home/yakate/.config/waybar/modules/custom/*.jsonc"
+  ],
+
+  "modules-right": ["group/system", "group/right"],
+//  "modules-center": ["hyprland/workspaces"],
+  //"modules-left": [ "custom/launcher", "custom/whoami", "group/window-title-wrapper"],
+  "modules-left": ["group/left", "hyprland/workspaces"], 
+  
+  //"width": 1280,
+  "layer": "top",
+  "position": "top",
+  "height": 30,
+  "margin-top": 5,
+  "margin-left": 10,
+  "margin-right": 10,
+}

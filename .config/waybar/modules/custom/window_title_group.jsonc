@@ -8,7 +8,7 @@
   },
   "custom/window-icon": {
     "format": "{}",
-    "exec": "~/.config/waybar/catppuccin/scripts/custom-window-icon.sh",
+    "exec": "~/.config/waybar/scripts/custom-window-icon.sh",
     "interval": 1,
     //"on-event": true,
     "return-type": "json",
@@ -17,7 +17,7 @@
   "custom/window-title": {
     "format": "{}",
     "max-length": 30,
-    "exec": "~/.config/waybar/catppuccin/scripts/custom-window-title.sh",
+    "exec": "~/.config/waybar/scripts/custom-window-title.sh",
     "interval": 1,
     "on-event": true,
     "return-type": "json",
